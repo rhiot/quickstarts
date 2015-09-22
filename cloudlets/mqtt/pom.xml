@@ -3,12 +3,9 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>io.rhiot.quickstarts</groupId>
-        <artifactId>rhiot-cloudlets</artifactId>
-        <version>0.1.2-SNAPSHOT</version>
-    </parent>
+    <groupId>io.rhiot.quickstarts</groupId>
     <artifactId>rhiot-cloudlets-mqtt</artifactId>
+    <version>0.1.2-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <licenses>
