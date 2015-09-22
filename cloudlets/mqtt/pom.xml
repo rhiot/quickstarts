@@ -6,7 +6,6 @@
     <groupId>io.rhiot.quickstarts</groupId>
     <artifactId>rhiot-cloudlets-mqtt</artifactId>
     <version>0.1.2-SNAPSHOT</version>
-    <packaging>pom</packaging>
 
     <licenses>
         <license>
