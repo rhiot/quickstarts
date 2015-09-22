@@ -12,7 +12,7 @@ import org.reflections.util.ConfigurationBuilder;
 import java.util.List;
 import java.util.Set;
 
-public class CamelInitializer implements Initializer {
+public class CamelInitializer implements BootInitializer {
 
     CamelContext camelContext = CamelContextFactories.camelContext();
 
@@ -27,6 +27,15 @@ public class CamelInitializer implements Initializer {
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }
+        }
+    }
+
+    @Override
+    public void stop() {
+        try {
+            camelContext.stop();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
     }
 
