@@ -1,10 +1,10 @@
 package io.rhiot.quickstarts.cloudlets.mqtt;
 
-import com.github.camellabs.iot.vertx.camel.CamelContextFactories;
 import io.rhiot.steroids.bootstrap.Bootstrap;
-import io.vertx.core.Vertx;
-import org.apache.camel.builder.RouteBuilder;
 
+/**
+ * Example of the MQTT base microservice.
+ */
 public class MqttCloudlet extends Bootstrap {
 
     public static void main(String... args) {
