@@ -1,16 +1,15 @@
 package io.rhiot.steroids.bootstrap;
 
-import io.rhiot.steroids.Steroids;
-
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+import static io.rhiot.steroids.Steroids.beans;
+
 public class Bootstrap {
 
-    private final List<Initializer> initializers = Steroids.beans(Initializer.class);
-
     public void start() {
+        List<Initializer> initializers = beans(Initializer.class);
         Collections.sort(initializers, new Comparator<Initializer>() {
             @Override
             public int compare(Initializer o1, Initializer o2) {
