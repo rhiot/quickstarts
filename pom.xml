@@ -3,10 +3,10 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-        <groupId>io.rhiot.quickstarts</groupId>
-        <artifactId>rhiot-quickstarts</artifactId>
-        <version>0.1.2-SNAPSHOT</version>
-        <packaging>pom</packaging>
+    <groupId>io.rhiot.quickstarts</groupId>
+    <artifactId>rhiot-quickstarts</artifactId>
+    <version>0.1.2-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
     <licenses>
         <license>
@@ -18,21 +18,5 @@
     <modules>
         <module>cloudlets</module>
     </modules>
-
-    <properties>
-        <rhiot.version>0.1.1</rhiot.version>
-    </properties>
-
-   <dependencyManagement>
-       <dependencies>
-           <dependency>
-               <groupId>io.rhiot</groupId>
-               <artifactId>rhiot-bom</artifactId>
-               <version>${rhiot.version}</version>
-               <type>pom</type>
-               <scope>import</scope>
-           </dependency>
-       </dependencies>
-   </dependencyManagement>
 
 </project>
