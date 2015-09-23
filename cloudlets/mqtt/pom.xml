@@ -41,21 +41,21 @@
         <dependency>
             <groupId>io.rhiot</groupId>
             <artifactId>rhiot-steroids-activemq</artifactId>
-            <version>${rhiot.version}</version>
         </dependency>
         <dependency>
             <groupId>io.rhiot</groupId>
-            <artifactId>rhiot-vertx</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.camel</groupId>
-            <artifactId>camel-paho</artifactId>
+            <artifactId>rhiot-steroids-camel</artifactId>
         </dependency>
 
         <!-- Testing -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-paho</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>
