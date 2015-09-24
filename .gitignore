@@ -1,2 +1,6 @@
+# IntelliJ Idea
 *.iml
 .idea/
+
+# Ignore ActiveMQ test data
+activemq-data/
