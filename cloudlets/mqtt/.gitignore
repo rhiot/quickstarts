@@ -1,0 +1,2 @@
+# Ignore ActiveMQ test data
+activemq-data/

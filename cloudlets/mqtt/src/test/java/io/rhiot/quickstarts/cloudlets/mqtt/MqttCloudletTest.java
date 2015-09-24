@@ -1,10 +1,11 @@
 package io.rhiot.quickstarts.cloudlets.mqtt;
 
-import io.rhiot.steroids.camel.CamelBootInitializer;
-import org.apache.camel.CamelContext;
 import org.apache.camel.component.mock.MockEndpoint;
+import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import static io.rhiot.steroids.camel.CamelBootInitializer.camelContext;
 
 public class MqttCloudletTest {
 
@@ -12,21 +13,29 @@ public class MqttCloudletTest {
 
     static MqttCloudlet mqttCloudlet = new MqttCloudlet();
 
-    static CamelContext camelContext;
-
     @BeforeClass
     public static void beforeClass() {
         mqttCloudlet.start();
-        camelContext = (CamelContext) CamelBootInitializer.camelContext();
+    }
+
+    @AfterClass
+    public static void afterClass() {
+        mqttCloudlet.stop();
     }
 
     // Tests
 
     @Test
     public void shouldReadMessageFromVertxMqttBridge() throws InterruptedException {
-        MockEndpoint mockEndpoint = camelContext.getEndpoint("mock:consumedFromMqttBroker", MockEndpoint.class);
-        mockEndpoint.setMinimumExpectedMessageCount(1);
-        camelContext.createProducerTemplate().sendBody("paho:test?brokerUrl=tcp://localhost:1883", "foo");
+        MockEndpoint mockEndpoint = camelContext().getEndpoint("mock:consumedFromMqttBroker", MockEndpoint.class);
+        mockEndpoint.expectedMinimumMessageCount(1);
+        mockEndpoint.assertIsSatisfied();
+    }
+
+    @Test
+    public void shouldReadMessageFromJmsMqttBridge() throws InterruptedException {
+        MockEndpoint mockEndpoint = camelContext().getEndpoint("mock:mqttJmsBridgeTest", MockEndpoint.class);
+        mockEndpoint.expectedMinimumMessageCount(1);
         mockEndpoint.assertIsSatisfied();
     }
 
