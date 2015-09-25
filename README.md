@@ -6,4 +6,4 @@ can be found [here](https://github.com/rhiot/rhiot/blob/master/docs/readme.md#qu
 
 The following quickstarts are available:
 
-* [MQTT cloudlet](https://github.com/rhiot/rhiot/blob/master/docs/readme.md#mqtt-cloudlet-quickstart)
+* [MQTT cloudlet](https://github.com/rhiot/quickstarts/tree/master/cloudlets/mqtt)([documentation](https://github.com/rhiot/rhiot/blob/master/docs/readme.md#mqtt-cloudlet-quickstart))
