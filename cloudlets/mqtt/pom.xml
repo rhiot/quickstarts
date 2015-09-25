@@ -17,9 +17,11 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <docker.image.target>${groupId}/${artifactId}</docker.image.target>
 
         <rhiot.version>0.1.2-SNAPSHOT</rhiot.version>
 
+        <docker-maven-plugin.version>0.12.0</docker-maven-plugin.version>
         <maven-shade-plugin.version>2.3</maven-shade-plugin.version>
     </properties>
 
@@ -94,6 +96,29 @@
                         </configuration>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.jolokia</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>${docker-maven-plugin.version}</version>
+                <configuration>
+                    <images>
+                        <image>
+                            <name>${docker.image.target}</name>
+                            <build>
+                                <from>rhiot/fatjar:0.1.1-SNAPSHOT</from>
+                                <tags>
+                                    <tag>latest</tag>
+                                    <tag>${project.version}</tag>
+                                </tags>
+                                <assembly>
+                                    <basedir>/jars</basedir>
+                                    <descriptorRef>artifact</descriptorRef>
+                                </assembly>
+                            </build>
+                        </image>
+                    </images>
+                </configuration>
             </plugin>
         </plugins>
     </build>
