@@ -18,14 +18,12 @@ public class ChatCloudlet extends CamelBootstrap {
     @Override
     public void configure() throws Exception {
         from(mqttJmsBridge("chat")).process(
+                // Append message to the chat history.
                 exchange -> chat.add(exchange.getIn().getBody(String.class))
         ).process(
+                // Prepare history update for chat listeners.
                 exchange -> exchange.getIn().setBody(join(chat, "\n"))
         ).to(mqttJmsBridge("chat-updates"));
-
-        from(mqttJmsBridge("chat-updates")).process(
-                exchange -> exchange.getIn().setBody(join(chat, "\n"))
-        );
     }
 
 }
