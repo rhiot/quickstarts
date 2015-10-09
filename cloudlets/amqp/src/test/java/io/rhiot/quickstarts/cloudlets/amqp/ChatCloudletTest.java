@@ -54,7 +54,7 @@ public class ChatCloudletTest extends Assert {
         camelContext().addRoutes(new RouteBuilder() {
             @Override
             public void configure() throws Exception {
-                from(amqp("chat-updates")).to("mock:chat");
+                from(amqp("topic:chat-updates")).to("mock:chat");
             }
         });
 

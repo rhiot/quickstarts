@@ -22,7 +22,7 @@ public class ChatCloudlet extends CamelBootstrap {
                 exchange -> chat.add(exchange.getIn().getBody(String.class))
         ).process(
                 exchange -> exchange.getIn().setBody(join(chat, "\n"))
-        ).to(amqpJmsBridge("chat-updates"));
+        ).to(amqpJmsBridge("topic:chat-updates"));
     }
 
 }
