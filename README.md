@@ -1,5 +1,7 @@
 # Rhiot quickstarts
 
+[![Build Status](https://travis-ci.org/rhiot/quickstarts.svg?branch=master)](https://travis-ci.org/rhiot/quickstarts)
+
 <a href="https://github.com/rhiot/rhiot"><img src="https://github.com/rhiot/rhiot/raw/master/rhiot.png" align="left" height="280" hspace="30"></a>
 
 [Rhiot](http://rhiot.io) quickstarts are base projects that can be copied and used as the building
