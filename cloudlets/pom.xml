@@ -19,6 +19,7 @@
     </licenses>
 
     <modules>
+        <module>amqp</module>
         <module>mqtt</module>
     </modules>
 
