@@ -6,7 +6,6 @@ import java.util.LinkedList;
 import java.util.List;
 
 import static io.rhiot.steroids.activemq.EmbeddedActiveMqBrokerBootInitializer.amqpJmsBridge;
-import static io.rhiot.steroids.activemq.EmbeddedActiveMqBrokerBootInitializer.mqttJmsBridge;
 import static org.apache.commons.lang3.StringUtils.join;
 
 /**
