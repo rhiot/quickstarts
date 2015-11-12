@@ -16,6 +16,7 @@
     </licenses>
 
     <modules>
+        <module>kura-camel</module>
         <module>cloudlets</module>
     </modules>
 
