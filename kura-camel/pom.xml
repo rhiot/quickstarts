@@ -20,10 +20,13 @@
     </licenses>
 
     <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <!-- Kura Java runtime version is 7. -->
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
 
         <rhiot.version>0.1.2</rhiot.version>
+
+        <slf4j.version>1.6.6</slf4j.version>
     </properties>
 
     <dependencyManagement>
@@ -42,6 +45,12 @@
         <dependency>
             <groupId>org.apache.camel</groupId>
             <artifactId>camel-kura</artifactId>
+        </dependency>
+        <!-- We need to make this module back-compatible with SLF version defined in Camel Core OSGi manifest. -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
         </dependency>
     </dependencies>
 
