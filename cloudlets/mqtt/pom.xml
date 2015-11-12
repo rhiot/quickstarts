@@ -19,7 +19,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <docker.image.target>${groupId}/${artifactId}</docker.image.target>
 
-        <rhiot.version>0.1.2-SNAPSHOT</rhiot.version>
+        <rhiot.version>0.1.2</rhiot.version>
 
         <docker-maven-plugin.version>0.12.0</docker-maven-plugin.version>
         <maven-shade-plugin.version>2.3</maven-shade-plugin.version>
