@@ -17,6 +17,7 @@ public class GatewayRouter extends KuraRouter {
                 to("log:heartbeat");
     }
 
+    // TODO Remove this overriden method as soon as Camel 2.17 is out (see CAMEL-9314)
     @Override
     public void start(BundleContext bundleContext) throws Exception {
         try {
