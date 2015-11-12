@@ -35,11 +35,9 @@ public class GatewayRouter extends KuraRouter {
     }
 
     @Override
-    protected CamelContext createCamelContext() {
-        CamelContext camelContext = super.createCamelContext();
+    protected void beforeStart(CamelContext camelContext) {
         camelContext.addComponent("timer", new TimerComponent());
         camelContext.addComponent("log", new LogComponent());
-        return camelContext;
     }
 
 }
