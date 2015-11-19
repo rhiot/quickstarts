@@ -24,7 +24,7 @@
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
 
-        <rhiot.version>0.1.2</rhiot.version>
+        <rhiot.version>0.1.3-SNAPSHOT</rhiot.version>
 
         <maven-bundle-plugin.version>2.5.3</maven-bundle-plugin.version>
         <slf4j.version>1.6.6</slf4j.version>
@@ -44,7 +44,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.apache.camel</groupId>
+            <groupId>io.rhiot</groupId>
             <artifactId>camel-kura</artifactId>
         </dependency>
         <!-- We need to make this module back-compatible with SLF version defined in Camel Core OSGi manifest. -->
@@ -70,5 +70,19 @@
             </plugin>
         </plugins>
     </build>
+
+    <repositories>
+        <repository>
+            <!-- We need this for the latest Rhiot SNAPSHOTs. -->
+            <id>sonatype.snapshots</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 
 </project>
