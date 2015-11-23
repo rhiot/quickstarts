@@ -54,6 +54,7 @@
             <version>${slf4j.version}</version>
         </dependency>
 
+        <!-- Testing -->
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
