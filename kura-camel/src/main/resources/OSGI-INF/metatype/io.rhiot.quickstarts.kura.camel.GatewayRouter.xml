@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaData xmlns="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="en_us">
+    <OCD id="io.rhiot.quickstarts.kura.camel.GatewayRouter"
+         name="ConfigurableExample"
+         description="This is a sample metatype file for a simple configurable component">
+
+        <AD id="camel.route.xml"
+            name="camel.route.xml"
+            type="String"
+            cardinality="0"
+            required="true"
+            default="Some Text"
+            description="String configuration parameter"/>
+
+    </OCD>
+
+    <Designate pid="io.rhiot.quickstarts.kura.camel.GatewayRouter">
+        <Object ocdref="io.rhiot.quickstarts.kura.camel.GatewayRouter"/>
+    </Designate>
+</MetaData>
