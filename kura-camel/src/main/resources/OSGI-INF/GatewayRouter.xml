@@ -9,5 +9,8 @@
     enabled="true"
     immediate="true">
 	<implementation class="io.rhiot.quickstarts.kura.camel.GatewayRouter"/>
+	<service>
+		<provide interface="io.rhiot.quickstarts.kura.camel.GatewayRouter"/>
+	</service>
 	<property name="service.pid" type="String" value="io.rhiot.quickstarts.kura.camel.GatewayRouter"/>
 </scr:component>
