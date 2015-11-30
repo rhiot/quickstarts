@@ -2,7 +2,7 @@
 <MetaData xmlns="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="en_us">
     <OCD id="io.rhiot.quickstarts.kura.camel.GatewayRouter"
          name="Rhiot Camel gateway"
-         description="This is a sample metatype file for a simple configurable component">
+         description="Configurable Camel-based Kura gateway">
 
         <AD id="camel.route.xml"
             name="camel.route.xml"
@@ -10,7 +10,7 @@
             cardinality="0"
             required="false"
             default=""
-            description="String configuration parameter"/>
+            description="Camel XML route definition"/>
     </OCD>
 
     <Designate pid="io.rhiot.quickstarts.kura.camel.GatewayRouter">
