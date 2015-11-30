@@ -7,4 +7,4 @@ IoT solutions. Rhiot supports Kura gateway deployments as a first class citizen 
 used as a blueprint for the Camel deployments for Kura. It uses [Camel Kura component](http://camel.apache.org/kura.html) 
 under the hood.
 Documentation for this quickstart
-can be found [here](https://github.com/rhiot/rhiot/blob/master/docs/readme.md#kura-camel-quickstart).
+can be found [here](https://rhiot.gitbooks.io/rhiotdocumentation/content/quickstarts/kura_camel_quickstart.html).
