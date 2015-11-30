@@ -19,5 +19,5 @@ message routing. Vert.x verticles and event bus are also the first class citizen
 The following quickstarts are available:
 
 * [Kura Camel](https://github.com/rhiot/quickstarts/tree/master/kura-camel) ([documentation](https://rhiot.gitbooks.io/rhiotdocumentation/content/quickstarts/kura_camel_quickstart.html))
-* [AMQP cloudlet](https://github.com/rhiot/quickstarts/tree/master/cloudlets/amqp) ([documentation](https://github.com/rhiot/rhiot/blob/master/docs/readme.md#amqp-cloudlet-quickstart))
-* [MQTT cloudlet](https://github.com/rhiot/quickstarts/tree/master/cloudlets/mqtt) ([documentation](https://github.com/rhiot/rhiot/blob/master/docs/readme.md#mqtt-cloudlet-quickstart))
+* [AMQP cloudlet](https://github.com/rhiot/quickstarts/tree/master/cloudlets/amqp) ([documentation](https://rhiot.gitbooks.io/rhiotdocumentation/content/quickstarts/amqp_cloudlet_quickstarts.html))
+* [MQTT cloudlet](https://github.com/rhiot/quickstarts/tree/master/cloudlets/mqtt) ([documentation](https://rhiot.gitbooks.io/rhiotdocumentation/content/quickstarts/mqtt_cloudlet_quickstart.html))

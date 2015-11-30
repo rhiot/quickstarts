@@ -6,4 +6,4 @@ backend application capable of exposing AMQP-endpoint and handling the AMQP-base
 quickstart is the best way to start your development efforts.
 
 Documentation for this quickstart
-can be found [here](https://github.com/rhiot/rhiot/blob/master/docs/readme.md#amqp-cloudlet-quickstart).
+can be found [here](https://rhiot.gitbooks.io/rhiotdocumentation/content/quickstarts/amqp_cloudlet_quickstarts.html).
