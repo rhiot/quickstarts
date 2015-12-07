@@ -20,6 +20,7 @@ public class GatewayRouter extends RhiotKuraRouter {
 
     @Override
     protected void beforeStart(CamelContext camelContext) {
+        super.beforeStart(camelContext);
         camelContext.addComponent("timer", new TimerComponent());
         camelContext.addComponent("log", new LogComponent());
         camelContext.addComponent("mock", new MockComponent());
