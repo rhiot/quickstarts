@@ -86,6 +86,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
+                        <Bundle-Activator>io.rhiot.quickstarts.kura.camel.GatewayRouterConfiguration</Bundle-Activator>
                         <Service-Component>OSGI-INF/*.xml</Service-Component>
                     </instructions>
                 </configuration>
