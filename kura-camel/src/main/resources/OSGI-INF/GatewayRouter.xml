@@ -2,7 +2,7 @@
 
 <scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" 
     name="io.rhiot.quickstarts.kura.camel.GatewayRouter"
-	configuration-policy="require" enabled="true" immediate="true"
+	configuration-policy="optional" enabled="true" immediate="true"
     activate="activate" deactivate="deactivate" modified="modified">
 	<implementation class="io.rhiot.quickstarts.kura.camel.GatewayRouter"/>
 	<service>
