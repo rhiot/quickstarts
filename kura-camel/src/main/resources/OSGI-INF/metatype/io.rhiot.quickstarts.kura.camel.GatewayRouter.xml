@@ -5,7 +5,7 @@
 
         <AD id="camel.route.xml" name="camel.route.xml"
             description="Camel XML route definition &#x200b;&#x200b;&#x200b;&#x200b;&#x200b;&#x200b;&#x200b;&#x200b;&#x200b;&#x200b;"
-            type="String" cardinality="0" required="false" default=""/>
+            type="String" cardinality="0" required="false" default="...Insert XML CAMEL route..."/>
 
     </OCD>
 
