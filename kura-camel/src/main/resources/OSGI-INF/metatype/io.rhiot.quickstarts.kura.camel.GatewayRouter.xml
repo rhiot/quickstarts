@@ -2,6 +2,8 @@
 <MetaData xmlns="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="en_us">
     <OCD id="io.rhiot.quickstarts.kura.camel.GatewayRouter"
          name="Rhiot Camel gateway" description="Configurable Camel-based Kura gateway">
+        
+        <Icon resource="OSGI-INF/rhiot-logo.png" size="32" />
 
         <AD id="camel.route.xml" name="camel.route.xml"
             description="Camel XML route definition &#x200b;&#x200b;&#x200b;&#x200b;&#x200b;&#x200b;&#x200b;&#x200b;&#x200b;&#x200b;"
