@@ -6,7 +6,7 @@ import org.junit.Test;
 
 public class GatewayRouterTest {
 
-    TestKuraServer testKuraServer = new TestKuraServer();
+    static TestKuraServer testKuraServer = new TestKuraServer();
 
     @Test
     public void shouldRunRoute() throws InterruptedException {
