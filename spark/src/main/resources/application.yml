@@ -1,0 +1,4 @@
+rhiot:
+  spark:
+    masterUrl: spark://${SPARK_MASTER_SERVICE_HOST}:7077
+AMQP_SERVICE_HOST: AMQP_SERVICE_HOST

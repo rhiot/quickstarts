@@ -18,6 +18,7 @@
     <modules>
         <module>kura-camel</module>
         <module>cloudlets</module>
+        <module>spark</module>
     </modules>
 
 </project>
