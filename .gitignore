@@ -2,5 +2,11 @@
 *.iml
 .idea/
 
+# Eclipse stuff
+**/.project
+**/.settings/*
+**/.prefs
+**/.classpath
+
 # Ignore ActiveMQ test data
 activemq-data/
