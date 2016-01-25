@@ -6,7 +6,7 @@
 
 [Rhiot](http://rhiot.io) quickstarts are base projects that can be copied and used as the building
 blocks of your IoT solution. Rhiot quickstarts reference documentation
-can be found [here](https://github.com/rhiot/rhiot/blob/master/docs/readme.md#quickstarts).
+can be found [here](https://rhiot.gitbooks.io/rhiotdocumentation/content/quickstarts/index.html).
 
 ## Programming model
 
