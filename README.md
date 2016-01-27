@@ -20,3 +20,4 @@ The following quickstarts are available:
 
 * [Kura Camel](https://github.com/rhiot/quickstarts/tree/master/kura-camel) ([documentation](https://rhiot.gitbooks.io/rhiotdocumentation/content/quickstarts/kura_camel_quickstart.html))
 * [Apache Spark](https://github.com/rhiot/quickstarts/tree/master/spark) ([documentation](https://rhiot.gitbooks.io/rhiotdocumentation/content/quickstarts/spark.html))
+* [Cloud Platform](https://github.com/rhiot/quickstarts/tree/master/cloudplatform)
