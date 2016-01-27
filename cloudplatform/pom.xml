@@ -1,0 +1,62 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>io.rhiot.quickstarts</groupId>
+  <artifactId>rhiot-cloudplatform</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  
+  <licenses>
+  	<license>
+  		<name>The Apache License, Version 2.0</name>
+  		<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+  	</license>
+  </licenses>
+  
+  <properties>
+  	<rhiot.version>0.1.4-SNAPSHOT</rhiot.version>
+  </properties>
+  
+  <dependencyManagement>
+  	<dependencies>
+  		<dependency>
+  			<groupId>io.rhiot</groupId>
+  			<artifactId>rhiot-bom</artifactId>
+  			<version>${rhiot.version}</version>
+  			<type>pom</type>
+  			<scope>import</scope>
+  		</dependency>
+  	</dependencies>
+  </dependencyManagement>
+  
+  <dependencies>
+	<dependency>
+		<groupId>io.rhiot</groupId>
+	  	<artifactId>rhiot-cloudplatform-runtime-spring</artifactId>
+	</dependency>
+	<dependency>
+		<groupId>io.rhiot</groupId>
+	  	<artifactId>rhiot-cloudplatform-encoding-json</artifactId>
+	</dependency>
+	
+	<!-- Testing -->
+	<dependency>
+		<groupId>io.rhiot</groupId>
+		<artifactId>rhiot-cloudplatform-adapter-rest</artifactId>
+		<scope>test</scope>
+	</dependency>
+	<dependency>
+		<groupId>io.rhiot</groupId>
+		<artifactId>rhiot-cloudplatform-service-binding</artifactId>
+		<scope>test</scope>
+	</dependency>
+	<dependency>
+		<groupId>io.rhiot</groupId>
+		<artifactId>rhiot-spring-activemq</artifactId>
+		<scope>test</scope>
+	</dependency>
+	<dependency>
+		<groupId>junit</groupId>
+		<artifactId>junit</artifactId>
+		<scope>test</scope>
+	</dependency>
+  </dependencies>
+</project>
