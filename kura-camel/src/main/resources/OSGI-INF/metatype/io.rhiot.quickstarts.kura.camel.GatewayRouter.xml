@@ -1,17 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MetaData xmlns="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="en_us">
-    <OCD id="io.rhiot.quickstarts.kura.camel.GatewayRouter"
-         name="Rhiot Camel gateway" description="Configurable Camel-based Kura gateway">
-        
-        <Icon resource="OSGI-INF/rhiot-logo.png" size="32" />
+<MetaData xmlns="http://www.osgi.org/xmlns/metatype/v1.2.0"
+	xsi:noNamespaceSchemaLocation="https://osgi.org/xmlns/metatype/v1.2.0/metatype.xsd"
+	localization="en_us" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-        <AD id="camel.route.xml" name="camel.route.xml"
-            description="Camel XML route definition &#x200b;&#x200b;&#x200b;&#x200b;&#x200b;&#x200b;&#x200b;&#x200b;&#x200b;&#x200b;"
-            type="String" max="10000" cardinality="0" required="false" default="...Insert XML Camel route..."/>
+	<OCD id="io.rhiot.quickstarts.kura.camel.GatewayRouter" name="KuraRhiotService"
+		description="This is a Kura Rhiot sample metatype file for a simple configurable component">
 
-    </OCD>
+		<Icon resource="OSGI-INF/rhiot-logo.png" size="32" />
 
-    <Designate pid="io.rhiot.quickstarts.kura.camel.GatewayRouter">
-        <Object ocdref="io.rhiot.quickstarts.kura.camel.GatewayRouter"/>
-    </Designate>
+		<AD id="camel.kura.gpio.ouput.id" name="camel.kura.gpio.ouput.id"
+			type="Integer" cardinality="0" required="true" default="3"
+			description="id of the gpio for output">
+			<Option label="0" value="0" />
+			<Option label="1" value="1" />
+			<Option label="2" value="2" />
+			<Option label="3" value="3" />
+			<Option label="4" value="4" />
+			<Option label="5" value="5" />
+			<Option label="6" value="6" />
+			<Option label="7" value="7" />
+			<Option label="8" value="8" />
+			<Option label="9" value="9" />
+			<Option label="10" value="10" />
+			<Option label="11" value="11" />
+			<Option label="12" value="12" />
+			<Option label="13" value="13" />
+			<Option label="14" value="14" />
+			<Option label="15" value="15" />
+			<Option label="16" value="16" />
+			<Option label="17" value="17" />
+			<Option label="18" value="18" />
+			<Option label="19" value="19" />
+			<Option label="20" value="20" />
+			<Option label="21" value="21" />
+			<Option label="22" value="22" />
+			<Option label="23" value="23" />
+			<Option label="24" value="24" />
+			<Option label="25" value="25" />
+			<Option label="26" value="26" />
+			<Option label="27" value="27" />
+			<Option label="28" value="28" />
+			<Option label="29" value="29" />
+			<Option label="30" value="30" />
+		</AD>
+		<AD id="camel.kura.gpio.ouput.action" name="camel.kura.gpio.ouput.action"
+			type="String" cardinality="0" required="true" default="BLINK"
+			description="action for output gpio">
+			<Option label="BLINK" value="BLINK" />
+			<Option label="TOGGLE" value="TOGGLE" />
+			<Option label="LOW" value="LOW" />
+			<Option label="HIGH" value="HIGH" />
+		</AD>
+		<AD id="camel.kura.gpio.ouput.period" name="camel.kura.gpio.ouput.period"
+			type="Integer" cardinality="0" required="true" default="1000"
+			description="pulse period for output gpio">
+		</AD>
+		<!-- AD id="camel.kura.gpio.input.id" name="camel.kura.gpio.input.id"
+			type="Integer" cardinality="0" required="true" default="10"
+			description="id of the gpio for input">
+			<Option label="0" value="0" />
+			<Option label="1" value="1" />
+			<Option label="2" value="2" />
+			<Option label="3" value="3" />
+			<Option label="4" value="4" />
+			<Option label="5" value="5" />
+			<Option label="6" value="6" />
+			<Option label="7" value="7" />
+			<Option label="8" value="8" />
+			<Option label="9" value="9" />
+			<Option label="10" value="10" />
+			<Option label="11" value="11" />
+			<Option label="12" value="12" />
+			<Option label="13" value="13" />
+			<Option label="14" value="14" />
+			<Option label="15" value="15" />
+			<Option label="16" value="16" />
+			<Option label="17" value="17" />
+			<Option label="18" value="18" />
+			<Option label="19" value="19" />
+			<Option label="20" value="20" />
+			<Option label="21" value="21" />
+			<Option label="22" value="22" />
+			<Option label="23" value="23" />
+			<Option label="24" value="24" />
+			<Option label="25" value="25" />
+			<Option label="26" value="26" />
+			<Option label="27" value="27" />
+			<Option label="28" value="28" />
+			<Option label="29" value="29" />
+			<Option label="30" value="30" />
+		</AD-->
+	</OCD>
+
+	<Designate pid="io.rhiot.quickstarts.kura.camel.GatewayRouter">
+		<Object ocdref="io.rhiot.quickstarts.kura.camel.GatewayRouter" />
+	</Designate>
 </MetaData>
