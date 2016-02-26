@@ -16,6 +16,7 @@
     </licenses>
 
     <modules>
+        <module>cloudplatform</module>
         <module>kura-camel</module>
         <module>spark</module>
     </modules>
