@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaData xmlns="http://www.osgi.org/xmlns/metatype/v1.2.0"
+		xsi:noNamespaceSchemaLocation="https://osgi.org/xmlns/metatype/v1.2.0/metatype.xsd"
+		localization="en_us" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+		<OCD id="io.rhiot.quickstarts.kura.camel.GatewayRouter" name="KuraRhiotService"
+				description="This is a Kura Rhiot sample metatype file for a simple configurable component">
+
+				<Icon resource="OSGI-INF/rhiot-logo.png" size="32"/>
+
+				<AD id="camel.kura.gpio.output.id" name="camel.kura.gpio.output.id"
+						type="Integer" cardinality="1" required="true" default="7"
+						description="id of the gpio for output">
+						<Option label="GPIO 0" value="0"/>
+						<Option label="GPIO 1" value="1"/>
+						<Option label="GPIO 2" value="2"/>
+						<Option label="GPIO 3" value="3"/>
+						<Option label="GPIO 4" value="4"/>
+						<Option label="GPIO 5" value="5"/>
+						<Option label="GPIO 6" value="6"/>
+						<Option label="GPIO 7" value="7"/>
+						<Option label="GPIO 8" value="8"/>
+						<Option label="GPIO 9" value="9"/>
+						<Option label="GPIO 10" value="10"/>
+						<Option label="GPIO 11" value="11"/>
+						<Option label="GPIO 12" value="12"/>
+						<Option label="GPIO 13" value="13"/>
+						<Option label="GPIO 14" value="14"/>
+						<Option label="GPIO 15" value="15"/>
+						<Option label="GPIO 16" value="16"/>
+						<Option label="GPIO 17" value="17"/>
+						<Option label="GPIO 18" value="18"/>
+						<Option label="GPIO 19" value="19"/>
+						<Option label="GPIO 20" value="20"/>
+						<Option label="GPIO 21" value="21"/>
+						<Option label="GPIO 22" value="22"/>
+						<Option label="GPIO 23" value="23"/>
+						<Option label="GPIO 24" value="24"/>
+						<Option label="GPIO 25" value="25"/>
+						<Option label="GPIO 26" value="26"/>
+						<Option label="GPIO 27" value="27"/>
+						<Option label="GPIO 28" value="28"/>
+						<Option label="GPIO 29" value="29"/>
+						<Option label="GPIO 30" value="30"/>
+				</AD>
+				<AD id="camel.kura.gpio.output.action" name="camel.kura.gpio.output.action"
+						type="String" cardinality="0" required="true" default="BLINK"
+						description="action for output gpio">
+						<Option label="BLINK" value="BLINK"/>
+						<Option label="TOGGLE" value="TOGGLE"/>
+						<Option label="LOW" value="LOW"/>
+						<Option label="HIGH" value="HIGH"/>
+				</AD>
+				<AD id="camel.kura.gpio.input.trigger" name="camel.kura.gpio.input.trigger"
+						type="String" cardinality="0" required="true" default="FALLING_EDGE"
+						description="trigger for input gpio">
+						<Option label="RAISING_EDGE" value="RAISING_EDGE"/>
+						<Option label="FALLING_EDGE" value="FALLING_EDGE"/>
+						<Option label="BOTH_EDGES" value="BOTH_EDGES"/>
+				</AD>
+
+				<AD id="camel.kura.gpio.input.id" name="camel.kura.gpio.input.id"
+						type="Integer" cardinality="0" required="true" default="17"
+						description="id of the gpio for input">
+						<Option label="GPIO 0" value="0"/>
+						<Option label="GPIO 1" value="1"/>
+						<Option label="GPIO 2" value="2"/>
+						<Option label="GPIO 3" value="3"/>
+						<Option label="GPIO 4" value="4"/>
+						<Option label="GPIO 5" value="5"/>
+						<Option label="GPIO 6" value="6"/>
+						<Option label="GPIO 7" value="7"/>
+						<Option label="GPIO 8" value="8"/>
+						<Option label="GPIO 9" value="9"/>
+						<Option label="GPIO 10" value="10"/>
+						<Option label="GPIO 11" value="11"/>
+						<Option label="GPIO 12" value="12"/>
+						<Option label="GPIO 13" value="13"/>
+						<Option label="GPIO 14" value="14"/>
+						<Option label="GPIO 15" value="15"/>
+						<Option label="GPIO 16" value="16"/>
+						<Option label="GPIO 17" value="17"/>
+						<Option label="GPIO 18" value="18"/>
+						<Option label="GPIO 19" value="19"/>
+						<Option label="GPIO 20" value="20"/>
+						<Option label="GPIO 21" value="21"/>
+						<Option label="GPIO 22" value="22"/>
+						<Option label="GPIO 23" value="23"/>
+						<Option label="GPIO 24" value="24"/>
+						<Option label="GPIO 25" value="25"/>
+						<Option label="GPIO 26" value="26"/>
+						<Option label="GPIO 27" value="27"/>
+						<Option label="GPIO 28" value="28"/>
+						<Option label="GPIO 29" value="29"/>
+						<Option label="GPIO 30" value="30"/>
+				</AD>
+		</OCD>
+
+		<Designate pid="io.rhiot.quickstarts.kura.camel.GatewayRouter">
+				<Object ocdref="io.rhiot.quickstarts.kura.camel.GatewayRouter"/>
+		</Designate>
+</MetaData>

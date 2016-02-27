@@ -18,6 +18,7 @@
     <modules>
         <module>cloudplatform</module>
         <module>kura-camel</module>
+        <module>kura-camel-dio</module>
         <module>spark</module>
     </modules>
 
