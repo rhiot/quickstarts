@@ -19,7 +19,7 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
 
-        <rhiot.version>0.1.4-SNAPSHOT</rhiot.version>
+        <rhiot.version>0.1.4</rhiot.version>
 
         <!-- Downgraded version of Jackson to match Spark 1.5.1. -->
         <jackson.version>2.4.4</jackson.version>
