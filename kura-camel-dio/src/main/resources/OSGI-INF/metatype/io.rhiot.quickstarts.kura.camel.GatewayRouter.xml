@@ -102,14 +102,15 @@
 				</AD>
 
 				<AD id="camel.kura.i2c.device.id" name="camel.kura.i2c.device.id"
-						type="String" cardinality="0" required="true" default="0x77"
+						type="String" cardinality="0" required="true" default="0x5c"
 						description="i2c Device id (decimal,hexadecimal)"/>
 
 
 				<AD id="camel.kura.i2c.device.driver" name="camel.kura.i2c.device.driver"
-						type="String" cardinality="0" required="true" default="bmp180"
+						type="String" cardinality="0" required="true" default="hts221"
 						description="i2c Device driver">
 						<Option label="Temp and Pressure Sensor (BMP180)" value="bmp180"/>
+						<Option label="Temp and Humidity Sensor (HTS221)" value="hts221"/>
 				</AD>
 
 		</OCD>
