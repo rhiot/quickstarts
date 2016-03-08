@@ -17,10 +17,11 @@ public class GatewayRouter extends RhiotKuraRouter {
 
         from("direct:mainRoute").id("[Main-Route]")
                 .to("deviceio-i2c://{{metatype:camel.kura.i2c.bus.id}}/{{metatype:camel.kura.i2c.device.id}}?driver={{metatype:camel.kura.i2c.device.driver}}")
-                .to("log:io.rhiot.kura.heartbeat")
-                .wireTap(
-                        "kura-gpio://{{metatype:camel.kura.gpio.output.id}}?action={{metatype:camel.kura.gpio.output.action}}")
+                .to("log:io.rhiot.kura.heartbeat").wireTap("direct:LEDRoute")
                 .to("kura-cloud:{{metatype:camel.kura.app.id}}/{{metatype:camel.kura.topic.id}}");
+
+        from("direct:LEDRoute").id("[LED-Route]").to(
+                "kura-gpio://{{metatype:camel.kura.gpio.output.id}}?action={{metatype:camel.kura.gpio.output.action}}");
 
     }
 }
