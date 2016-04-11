@@ -41,8 +41,14 @@
 
     <dependencies>
         <dependency>
-            <groupId>io.rhiot</groupId>
-            <artifactId>camel-kura</artifactId>
+            <groupId>org.eclipse.kura</groupId>
+            <artifactId>org.eclipse.kura.camel</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.kura</groupId>
+            <artifactId>org.eclipse.kura.api</artifactId>
+            <version>1.0.8-SNAPSHOT</version>
         </dependency>
         <!-- We need to make this module back-compatible with SLF version defined in Camel Core OSGi manifest. -->
         <dependency>

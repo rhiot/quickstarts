@@ -1,15 +1,15 @@
 package io.rhiot.quickstarts.kura.camel;
 
-import io.rhiot.component.kura.router.RhiotKuraRouter;
 import org.apache.camel.CamelContext;
 import org.apache.camel.component.log.LogComponent;
 import org.apache.camel.component.mock.MockComponent;
 import org.apache.camel.component.timer.TimerComponent;
+import org.eclipse.kura.camel.router.CamelRouter;
 
 /**
  * Example of the Kura Camel application.
  */
-public class GatewayRouter extends RhiotKuraRouter {
+public class GatewayRouter extends CamelRouter {
 
     @Override
     public void configure() throws Exception {
