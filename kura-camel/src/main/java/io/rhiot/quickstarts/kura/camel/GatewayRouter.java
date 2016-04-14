@@ -38,6 +38,16 @@ public class GatewayRouter extends CamelRouter {
                   .to("log:equalToTen")
                 .otherwise()
                 .to("log:greaterThanTen");
+
+        from("timer://xmltopic").
+                process(new Processor() {
+                    @Override
+                    public void process(Exchange exchange) throws Exception {
+                        KuraPayload payload = new KuraPayload();
+                        payload.addMetric("temperature", new Random().nextInt(20));
+                        exchange.getIn().setBody(payload);
+                    }
+                }).to("kura-cloud:myapp/xmltopic");
     }
 
 }
