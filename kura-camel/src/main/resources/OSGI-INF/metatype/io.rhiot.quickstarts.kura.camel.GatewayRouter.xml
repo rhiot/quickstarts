@@ -7,7 +7,12 @@
 
         <AD id="camel.route.xml" name="camel.route.xml"
             description="Camel XML route definition &#x200b;&#x200b;&#x200b;&#x200b;&#x200b;&#x200b;&#x200b;&#x200b;&#x200b;&#x200b;"
-            type="String" max="10000" cardinality="0" required="false" default="...Insert XML Camel route..."/>
+            type="String" max="10000" cardinality="0" required="false" default='&lt;routes xmlns=&quot;http://camel.apache.org/schema/spring&quot;&gt;
+	&lt;route id=&quot;cloudConsumer&quot;&gt;
+        &lt;from uri=&quot;kura-cloud:myapp/xmltopic&quot;/&gt;
+        &lt;to uri=&quot;log:MESSAGE_SENT_TO_CLOUD&quot;/&gt;
+    &lt;/route&gt;
+&lt;/routes&gt;'/>
 
     </OCD>
 
