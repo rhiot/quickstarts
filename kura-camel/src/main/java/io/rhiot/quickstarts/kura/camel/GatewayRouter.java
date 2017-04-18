@@ -1,23 +1,23 @@
 package io.rhiot.quickstarts.kura.camel;
 
+import java.util.Random;
+
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
-import org.eclipse.kura.camel.camelcloud.DefaultCamelCloudService;
-import org.eclipse.kura.camel.cloud.KuraCloudComponent;
-import org.eclipse.kura.camel.router.CamelRouter;
 import org.eclipse.kura.message.KuraPayload;
 
-import java.util.Random;
+import io.rhiot.component.kura.cloud.KuraCloudComponent;
+import io.rhiot.component.kura.router.RhiotKuraRouter;
 
 /**
  * Example of the Kura Camel application.
  */
-public class GatewayRouter extends CamelRouter {
+public class GatewayRouter extends RhiotKuraRouter {
 
     @Override
     public void configure() throws Exception {
         KuraCloudComponent cloudComponent = new KuraCloudComponent();
-        cloudComponent.setCloudService(new DefaultCamelCloudService(camelContext));
+        cloudComponent.setCamelContext(camelContext);
         camelContext.addComponent("kura-cloud", cloudComponent);
 
         from("timer://heartbeat").

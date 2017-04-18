@@ -17,6 +17,9 @@
     </licenses>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    
         <!-- Kura Java runtime version is 7. -->
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
@@ -40,11 +43,11 @@
     </dependencyManagement>
 
     <dependencies>
-        <dependency>
-            <groupId>org.eclipse.kura</groupId>
-            <artifactId>org.eclipse.kura.camel</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>
+		<dependency>
+			<groupId>io.rhiot</groupId>
+			<artifactId>camel-kura</artifactId>
+			<version>${rhiot.version}</version>
+		</dependency>
         <dependency>
             <groupId>org.eclipse.kura</groupId>
             <artifactId>org.eclipse.kura.api</artifactId>
@@ -102,8 +105,8 @@
     <repositories>
         <repository>
             <!-- We need this for the latest Rhiot SNAPSHOTs. -->
-            <id>sonatype.snapshots</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <id>eclipse.snapshots</id>
+            <url>https://repo.eclipse.org/content/repositories/kura-snapshots</url>
             <releases>
                 <enabled>false</enabled>
             </releases>
